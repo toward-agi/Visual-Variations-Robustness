@@ -55,21 +55,65 @@ The extensive evaluation of 21 LVLMs using V2R-Bench yielded several insights:
 
 ![image](figures/fig2.png)
 
-- <span style="color:green">**Surprising Vulnerability**</span>: Even state-of-the-art LVLMs, excelling in complex vision-language tasks, exhibit significant performance degradation on simple tasks like object recognition when faced with basic visual variations.
+<!-- - <span style="color:green">**Surprising Vulnerability**</span>: Even state-of-the-art LVLMs, excelling in complex vision-language tasks, exhibit significant performance degradation on simple tasks like object recognition when faced with basic visual variations. -->
 
-- <span style="color:green">**Counter-Intuitive Position Bias**</span>: Models often show higher accuracy for objects in peripheral regions of an image rather than the center, contradicting theories of effective receptive fields.
+<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<b>⚠️ Surprising Vulnerability</b>:
+Even state-of-the-art LVLMs, excelling in complex vision-language tasks, exhibit significant performance degradation on simple tasks like object recognition when faced with basic visual variations.
+</div>
 
-- <span style="color:green">**Human-like Visual Acuity Threshold**</span>: Model reliability decreases as object scale diminishes, stabilizing below a critical size threshold, analogous to human visual acuity limits.
+<!-- - <span style="color:green">**Selective Orientation Robustness**</span>: LVLMs demonstrate varied sensitivity to object orientation, performing robustly for some angles but failing significantly for others. (See Figure 2a). -->
 
-- <span style="color:green">**Selective Orientation Robustness**</span>: LVLMs demonstrate varied sensitivity to object orientation, performing robustly for some angles but failing significantly for others.
+<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<b>⚠️ Selective Orientation Robustness</b>:
+LVLMs demonstrate varied sensitivity to object orientation, performing robustly for some angles but failing significantly for others. (See Figure 2a).
+</div>
 
-- <span style="color:green">**Contextual Over-reliance**</span>: Models frequently ground predictions on visual contextual inference rather than direct, faithful perception of the target object.
+<!-- - <span style="color:green">**Counter-Intuitive Position Bias**</span>: Models often show higher accuracy for objects in peripheral regions of an image rather than the center, contradicting theories of effective receptive fields. (See Figure 2b). -->
 
-- <span style="color:green">**Root Causes Identified**</span>:
+<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<b>⚠️ Counter-Intuitive Position Bias</b>:
+Models often show higher accuracy for objects in peripheral regions of an image rather than the center, contradicting theories of effective receptive fields. (See Figure 2b).
+</div>
+
+<!-- - <span style="color:green">**Human-like Visual Acuity Threshold**</span>: Model reliability decreases as object scale diminishes, stabilizing below a critical size threshold, analogous to human visual acuity limits. (See Figure 2c). -->
+
+<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<b>⚠️ Human-like Visual Acuity Threshold</b>:
+Model reliability decreases as object scale diminishes, stabilizing below a critical size threshold, analogous to human visual acuity limits. (See Figure 2c).
+</div>
+
+<!-- - <span style="color:green">**Contextual Over-reliance**</span>: Models frequently ground predictions on visual contextual inference rather than direct, faithful perception of the target object. -->
+
+<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<b>⚠️ Contextual Over-reliance</b>:
+Models frequently ground predictions on visual contextual inference rather than direct, faithful perception of the target object.
+</div>
+
+<!-- - <span style="color:green">**Root Causes Identified**</span>:
     - Inadequate Multimodal Alignment: The primary factor, leading to unstable visual representations and poor semantic alignment with the language model.
-    - Error Accumulation in Pipeline Architectures: Sequential processing in typical LVLMs (vision encoder → projector → LLM) tends to amplify errors.
+    - Error Accumulation in Pipeline Architectures: Sequential processing in typical LVLMs (vision encoder → projector → LLM) tends to amplify errors. -->
 
-- <span style="color:green">**Architectural Deficiencies**</span>: Complementary experiments with synthetic training data suggest these vulnerabilities are fundamentally rooted in architectural design choices rather than mere data limitations.
+
+<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<b>⚠️ Root Causes Identified</b>:
+<br>
+Inadequate Multimodal Alignment: The primary factor, leading to unstable visual representations and poor semantic alignment with the language model.
+<br>
+Error Accumulation in Pipeline Architectures: Sequential processing in typical LVLMs (vision encoder → projector → LLM) tends to amplify errors.
+</div>
+
+<!-- - <span style="color:green">**Architectural Deficiencies**</span>: Complementary experiments with synthetic training data suggest these vulnerabilities are fundamentally rooted in architectural design choices rather than mere data limitations. -->
+
+
+
+
+
+<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<b>⚠️ Architectural Deficiencies</b>: Complementary experiments with synthetic training data suggest these vulnerabilities are fundamentally rooted in architectural design choices rather than mere data limitations.
+</div>
+
+
 
 ## Example Usage
 
@@ -91,7 +135,7 @@ In `eval_utils/` provides evaluation functions to the model prediction.
 In `component_analysis/` we provide scripts for the linear probing experiments of the model components (i.e. vision encoder, mm-projector).
 
 ## Citation
-This paper is accepted by ACL 2025 (Findings).
+> 🚀 Our paper is accepted by ACL 2025 (Findings).
 
 For full detailed, please refer to [our paper](https://arxiv.org/abs/2504.16727).
 
