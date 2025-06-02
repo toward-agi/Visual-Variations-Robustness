@@ -57,35 +57,35 @@ The extensive evaluation of 21 LVLMs using V2R-Bench yielded several insights:
 
 <!-- - <span style="color:green">**Surprising Vulnerability**</span>: Even state-of-the-art LVLMs, excelling in complex vision-language tasks, exhibit significant performance degradation on simple tasks like object recognition when faced with basic visual variations. -->
 
-<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<div style="background-color:rgb(254, 249, 234); padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
 <b>⚠️ Surprising Vulnerability</b>:
 Even state-of-the-art LVLMs, excelling in complex vision-language tasks, exhibit significant performance degradation on simple tasks like object recognition when faced with basic visual variations.
 </div>
 
 <!-- - <span style="color:green">**Selective Orientation Robustness**</span>: LVLMs demonstrate varied sensitivity to object orientation, performing robustly for some angles but failing significantly for others. (See Figure 2a). -->
 
-<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<div style="background-color: rgb(254, 249, 234); padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
 <b>⚠️ Selective Orientation Robustness</b>:
 LVLMs demonstrate varied sensitivity to object orientation, performing robustly for some angles but failing significantly for others. (See Figure 2a).
 </div>
 
 <!-- - <span style="color:green">**Counter-Intuitive Position Bias**</span>: Models often show higher accuracy for objects in peripheral regions of an image rather than the center, contradicting theories of effective receptive fields. (See Figure 2b). -->
 
-<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<div style="background-color: rgb(254, 249, 234); padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
 <b>⚠️ Counter-Intuitive Position Bias</b>:
 Models often show higher accuracy for objects in peripheral regions of an image rather than the center, contradicting theories of effective receptive fields. (See Figure 2b).
 </div>
 
 <!-- - <span style="color:green">**Human-like Visual Acuity Threshold**</span>: Model reliability decreases as object scale diminishes, stabilizing below a critical size threshold, analogous to human visual acuity limits. (See Figure 2c). -->
 
-<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<div style="background-color: rgb(254, 249, 234); padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
 <b>⚠️ Human-like Visual Acuity Threshold</b>:
 Model reliability decreases as object scale diminishes, stabilizing below a critical size threshold, analogous to human visual acuity limits. (See Figure 2c).
 </div>
 
 <!-- - <span style="color:green">**Contextual Over-reliance**</span>: Models frequently ground predictions on visual contextual inference rather than direct, faithful perception of the target object. -->
 
-<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<div style="background-color: rgb(254, 249, 234); padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
 <b>⚠️ Contextual Over-reliance</b>:
 Models frequently ground predictions on visual contextual inference rather than direct, faithful perception of the target object.
 </div>
@@ -95,7 +95,7 @@ Models frequently ground predictions on visual contextual inference rather than 
     - Error Accumulation in Pipeline Architectures: Sequential processing in typical LVLMs (vision encoder → projector → LLM) tends to amplify errors. -->
 
 
-<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<div style="background-color: rgb(254, 249, 234); padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
 <b>⚠️ Root Causes Identified</b>:
 <br>
 Inadequate Multimodal Alignment: The primary factor, leading to unstable visual representations and poor semantic alignment with the language model.
@@ -109,7 +109,7 @@ Error Accumulation in Pipeline Architectures: Sequential processing in typical L
 
 
 
-<div style="background-color: #fff3cd; padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
+<div style="background-color: rgb(254, 249, 234); padding: 15px; border-left: 6px solid #856404;border-radius: 5px;margin-bottom: 20px;">
 <b>⚠️ Architectural Deficiencies</b>: Complementary experiments with synthetic training data suggest these vulnerabilities are fundamentally rooted in architectural design choices rather than mere data limitations.
 </div>
 
